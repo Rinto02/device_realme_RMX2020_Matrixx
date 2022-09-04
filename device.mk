@@ -347,6 +347,7 @@ PRODUCT_PACKAGES += \
 # Runtime Resource Overlays 
 PRODUCT_PACKAGES += \
     ApertureOverlayRMX2020 \
+    ApertureQRScannerOverlayRMX2020 \
     CarrierConfigOverlayRMX2020 \
     FrameworksResOverlayRMX2020 \
     SettingsOverlayRMX2020 \
