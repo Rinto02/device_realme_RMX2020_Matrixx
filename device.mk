@@ -74,6 +74,14 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0.vendor \
     android.hardware.bluetooth.a2dp@1.0.vendor
 
+
+#AudioFx
+TARGET_EXCLUDES_AUDIOFX := true
+
+#Overlay
+DEVICE_PACKAGE_OVERLAYS += \
+    $(DEVICE_PATH)/overlay
+
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.device@3.6.vendor \
@@ -89,6 +97,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     RemoveCameraPackages \
     Aperture
+
+# Charger
+PRODUCT_PACKAGES += \
+    charger_res_images_vendor
 
 # Configstore
 PRODUCT_PACKAGES += \

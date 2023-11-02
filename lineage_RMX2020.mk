@@ -12,11 +12,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/non_ab_device.mk)
 # Inherit from device makefile
 $(call inherit-product, device/realme/RMX2020/device.mk)
 
-# Inherit some common PixelOS stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common Lineage stuff.
+TARGET_DISABLE_EPPE := true
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := aosp_RMX2020
+PRODUCT_NAME := lineage_RMX2020
 PRODUCT_DEVICE := RMX2020
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := RMX2020
@@ -28,8 +29,16 @@ PRODUCT_SYSTEM_DEVICE := RMX2020
 
 # PixelOS Additions
 TARGET_BOOT_ANIMATION_RES := 720
-TARGET_SUPPORTS_QUICK_TAP := false
-TARGET_CALL_RECORDING_SUPPORTED := false
+
+# Matrixx Stuffs
+MATRIXX_BUILD_TYPE := Official
+MATRIXX_MAINTAINER := Rinto
+MATRIXX_CHIPSET := mt6768
+MATRIXX_BATTERY := 5000mAh
+MATRIXX_DISPLAY := 720x1600
+TARGET_ENABLE_BLUR := true
+WITH_GAPPS := true
+TARGET_EXCLUDES_AUDIOFX := true
 
 # Build info
 PRODUCT_BUILD_PROP_OVERRIDES += \
