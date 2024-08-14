@@ -14,10 +14,10 @@ $(call inherit-product, device/realme/RMX2020/device.mk)
 
 # Inherit some common Lineage stuff.
 TARGET_DISABLE_EPPE := true
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_RMX2020
+PRODUCT_NAME := infinity_RMX2020
 PRODUCT_DEVICE := RMX2020
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := RMX2020
@@ -31,7 +31,6 @@ PRODUCT_SYSTEM_DEVICE := RMX2020
 TARGET_BOOT_ANIMATION_RES := 720
 
 # Matrixx Stuffs
-MATRIXX_BUILD_TYPE := Official
 MATRIXX_MAINTAINER := Rinto
 MATRIXX_CHIPSET := mt6768
 MATRIXX_BATTERY := 5000mAh
@@ -41,6 +40,7 @@ WITH_GMS := false
 TARGET_EXCLUDES_AUDIOFX := true
 TARGET_EXCLUDES_AUXIO := true
 TARGET_SUPPORTS_QUICK_TAP := false
+
 # Build info
 BUILD_FINGERPRINT := "realme/RMX2020/RMX2020:11/RP1A.200720.011/1652239672541:user/release-keys"
 PRODUCT_BUILD_PROP_OVERRIDES += \
