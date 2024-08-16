@@ -74,6 +74,7 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0.vendor \
     android.hardware.bluetooth.a2dp@1.0.vendor
 
+<<<<<<< HEAD
 
 #AudioFx
 TARGET_EXCLUDES_AUDIOFX := true
@@ -81,6 +82,10 @@ TARGET_EXCLUDES_AUDIOFX := true
 #Overlay
 DEVICE_PACKAGE_OVERLAYS += \
     $(DEVICE_PATH)/overlay
+=======
+# Bootanimation
+TARGET_BOOT_ANIMATION_RES := 720
+>>>>>>> fadd5bd (RMX2020: Cleanup No-Op)
 
 # Camera
 PRODUCT_PACKAGES += \
@@ -95,7 +100,6 @@ PRODUCT_PACKAGES += \
     libshim_camera_metadata
 
 PRODUCT_PACKAGES += \
-    RemoveCameraPackages \
     Aperture
 
 # Charger
