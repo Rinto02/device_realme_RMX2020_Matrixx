@@ -5,9 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/rising_RMX2020.mk
-
-COMMON_LUNCH_CHOICES := \
-    rising_RMX2020-user \
-    rising_RMX2020-userdebug \
-    rising_RMX2020-eng
+    $(LOCAL_DIR)/lineage_RMX2020.mk
