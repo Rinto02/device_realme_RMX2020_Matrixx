@@ -33,7 +33,6 @@ genfscon sysfs /kernel/gpu/gpu_(min|max)_clock                              u:ob
 
 # VM
 genfscon proc /sys/vm/direct_swappiness                                     u:object_r:proc_vm:s0
-genfscon proc /sys/vm/dirty_background_bytes                                u:object_r:proc_vm:s0
 
 # mmc_host
 genfscon sysfs /devices/platform/bootdevice/host0/target0:0:0/0:0:0:2/block/sdc/queue/discard_max_bytes u:object_r:sysfs_mmc_host:s0
