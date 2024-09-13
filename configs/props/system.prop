@@ -83,3 +83,9 @@ ro.zram.periodic_wb_delay_hours=24
 
 # Zygote
 ro.zygote.preload.enable=0
+
+# Infinity-X AboutPhone
+ro.infinity.soc=mt6768
+ro.infinity.battery=5000mAh
+ro.infinity.display=720x1600
+ro.infinity.camera=12MP + 2MP +2 MP
