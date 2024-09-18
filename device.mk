@@ -352,9 +352,11 @@ PRODUCT_PACKAGES += \
     ApertureOverlayRMX2020 \
     ApertureQRScannerOverlayRMX2020 \
     CarrierConfigOverlayRMX2020 \
+    FingerprintResOverlayRMX2020 \
     FrameworksResOverlayRMX2020 \
     SettingsOverlayRMX2020 \
     SettingsProviderOverlayRMX2020 \
+    SettingsProviderOverlayRMX2027 \
     SystemUIOverlayRMX2020 \
     TelephonyOverlayRMX2020 \
     TetheringResOverlayRMX2020 \
